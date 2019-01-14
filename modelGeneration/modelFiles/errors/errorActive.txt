@@ -1,0 +1,36 @@
+proc=3;
+model=dtmc
+vars=u,m,h,f
+params=c,d,e,f,g
+---
+myConvErrorsBisAct
+u->T @c
+u->C @1-c
+m->C @d
+m->T @1-d
+h->C @e
+h->T @1-e
+f->T @g
+f->C @1-g
+---
+myConvErrorsOxAct
+u->T @c
+u->C @1-c
+m->C @d
+m->T @1-d
+h->T @f
+h->C @1-f
+f->T @g
+f->C @1-g
+---
+myConvErrorsMSIAct
+u->C @c
+u->T @1-c
+m->C @d
+m->T @1-d
+h->C @e
+h->T @1-e
+f->T @g
+f->C @1-g
+---
+

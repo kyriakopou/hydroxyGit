@@ -1,0 +1,21 @@
+proc=2;
+model=dtmc
+vars=u,m,h
+params=c,d,e,f
+---
+myConvErrorsBis
+u->T @c
+u->C @1-c
+m->C @d
+m->T @1-d
+h->C @e
+h->T @1-e
+---
+myConvErrorsOx
+u->T @c
+u->C @1-c
+m->C @d
+m->T @1-d
+h->T @f
+h->C @1-f
+---

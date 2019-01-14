@@ -1,0 +1,26 @@
+proc=1;
+model=dtmc
+vars=u,m,h,f
+params=s
+---
+myDivision
+uu->uu @1
+um->uu @s
+um->um @1-s
+mu->uu @s
+mu->mu @1-s
+uh->uu @s
+uh->uh @1-s
+hm->hu @s
+hm->um @1-s
+mh->mu @s
+mh->uh @1-s
+mm->um @s
+mm->mu @1-s
+hh->hu @s
+hh->uh @1-s
+uf->uf @s
+uf->uu @1-s
+mf->mu @s
+mf->uf @1-s
+---

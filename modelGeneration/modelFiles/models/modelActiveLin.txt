@@ -1,0 +1,33 @@
+proc=5;
+model=ctmc
+vars=u,m,h,f 
+params=maint,maint_b1,deNovo,deNovo_b1,hydr,hydr_b1,form,form_b1,actDem,actDem_b1,p
+maxDegree=1
+knots=[]
+---
+myMaintenance
+um->mm @maint
+um->um @1-maint
+mu->mm @maint
+mu->mu @1-maint
+uh->mh @(1-p)*maint
+uh->uh @1-(1-p)*maint
+hu->hm @(1-p)*maint
+hu->hu @1-(1-p)*maint
+---
+myDeNovo
+u->m @deNovo
+u->u @1-deNovo
+---
+myHydroxylation
+m->h @hydr
+m->m @1-hydr
+---
+myFormal
+h->f @form
+h->h @1-form
+---
+myActiveDemethylation
+f->u @actDem
+f->f @1-actDem
+---

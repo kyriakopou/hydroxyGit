@@ -1,0 +1,17 @@
+proc=1;
+model=dtmc
+vars=u,m,h,f 
+params=m_m,m_m1,m_m2,m_mh1,m_mh2,m_d,m_d1,m_d2,m_dh1,m_dh2,h,h1,h2,h_h1,h_h2,f,f1,f2,f_h1,f_h2,d,d1,d2,d_h1,d_h2,p
+maxDegree=2
+knots=[7 9]
+---
+myMaintenance
+um->mm @m_m
+um->um @1-m_m
+mu->mm @m_m
+mu->mu @1-m_m
+uh->mh @(1-p)*m_m
+uh->uh @1-(1-p)*m_m
+hu->hm @(1-p)*m_m
+hu->hu @1-(1-p)*m_m
+--end--

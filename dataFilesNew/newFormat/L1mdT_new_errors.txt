@@ -1,0 +1,5 @@
+day,label,CError_BS,mCError_BS,hmCError_BS,fCError_BS,CError_oxBS,mCError_oxBS,hmCError_oxBS,fCError_oxBS,CErr_mab,mCErr_mab,hmCErr_mab,fCErr_mab,mabErr_mab,process
+0,day0,0.007,0.0802,0.0739,nan,0.005,0.0784,0.0729,nan,0.0100,0.022,0.105,0.093,0.045,-
+1,day1,0.008,0.0887,0.0743,nan,0.004,0.078,0.0738,nan,0.0104,0.012,0.097,0.079,0.045,rep
+3,day3,0.007,0.088,0.0703,nan,0.006,0.0758,0.0683,nan,0.0099,0.029,0.102,0.087,0.045,rep
+6,day6,0.006,0.0807,0.0758,nan,0.005,0.0856,0.0714,nan,0.011,0.088,0.112,0.075,0.045,rep

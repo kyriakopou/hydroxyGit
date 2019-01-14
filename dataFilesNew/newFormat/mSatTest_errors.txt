@@ -1,0 +1,3 @@
+day,label,CErr_BS,mCErr_BS,hmCErr_BS,CErr_oxBS,mCErr_oxBS,hmCErr_oxBS,process
+0,day0,0.004,0.0718,0.0567,0.004,0.0663,0.0772,-
+1,day1,0.005,0.073,0.0666,0.004,0.0727,0.0698,rep

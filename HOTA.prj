@@ -1,0 +1,152 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="2158046456" file="/Users/kyriakopou/Documents/codes/MATLAB/HydroxyMethylation/HOTA.prj" location="/Users/kyriakopou/Documents/codes/MATLAB/HydroxyMethylation" name="HOTA" preferred-package-location="/Users/kyriakopou/Desktop/HOTA/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>HOTA</param.appname>
+    <param.icon>${PROJECT_ROOT}/HOTA_resources/icon.icns</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}/HOTA_resources/icon_48.png</file>
+      <file>${PROJECT_ROOT}/HOTA_resources/icon_32.png</file>
+      <file>${PROJECT_ROOT}/HOTA_resources/icon_24.png</file>
+      <file>${PROJECT_ROOT}/HOTA_resources/icon_16.png</file>
+    </param.icons>
+    <param.version>1.01</param.version>
+    <param.authnamewatermark>Charalampos Kyriakopoulos</param.authnamewatermark>
+    <param.email>charis@cs.uni-saarland.de</param.email>
+    <param.company>UdS</param.company>
+    <param.summary>Hairpin Oxidative Bisulfite Sequence Time Course Data Analyzer</param.summary>
+    <param.description>H(O)TA is a Matlab based tool that allows biologists to accurately measure the methylation and hydroxylation levels on a certain locus of the DNA and to determine the efficiencies of the enzymes that are responsible for maintenance (Dnmt1) and de novo (Dnmt3a/b) methylation as well as hydroxylation (Tets) on this locus. It uses time course data from hairpin (oxidative) bisulfite sequencing and it takes into account all the possible conversion errors of the two methods.</param.description>
+    <param.screenshot>/Users/kyriakopou/Dropbox/SFB1027/toolLogos/hota.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>/UdS/HOTA/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>In the following directions, replace MCR_ROOT by the directory where the MATLAB Runtime is installed on the target machine.
+
+If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the concatenation of the following strings:
+
+    MCR_ROOT/v901/runtime/maci64:
+    MCR_ROOT/v901/sys/os/maci64:
+    MCR_ROOT/v901/bin/maci64
+
+If it is defined, set it to the concatenation of these strings:
+
+    ${LD_LIBRARY_PATH}: 
+    MCR_ROOT/v901/runtime/maci64:
+    MCR_ROOT/v901/sys/os/maci64:
+    MCR_ROOT/v901/bin/maci64</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>/Users/kyriakopou/Desktop/HOTA/for_testing</param.intermediate>
+    <param.files.only>/Users/kyriakopou/Desktop/HOTA/for_redistribution_files_only</param.files.only>
+    <param.output>/Users/kyriakopou/Desktop/HOTA/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/HOTA</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.authnamewatermark />
+      <param.company />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/UIdialogBox.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/DSHydroxyEmbryo.m</file>
+      <file>${PROJECT_ROOT}/UIestimateDSHydroxy.m</file>
+      <file>${PROJECT_ROOT}/UIhydroxy.fig</file>
+      <file>${PROJECT_ROOT}/UIreadData.m</file>
+      <file>${PROJECT_ROOT}/cellDivision.m</file>
+      <file>${PROJECT_ROOT}/convErrorBis.m</file>
+      <file>${PROJECT_ROOT}/convErrorOx.m</file>
+      <file>${PROJECT_ROOT}/dataFilesNew/newFormat/IAP_BS.txt</file>
+      <file>${PROJECT_ROOT}/dataFilesNew/newFormat/IAP_errors.txt</file>
+      <file>${PROJECT_ROOT}/dataFilesNew/newFormat/IAP_oxBS.txt</file>
+      <file>${PROJECT_ROOT}/deNovo.m</file>
+      <file>${PROJECT_ROOT}/guiFiles/questionmark.png</file>
+      <file>${PROJECT_ROOT}/guiFiles/tick.png</file>
+      <file>${PROJECT_ROOT}/guiFiles/undo.png</file>
+      <file>${PROJECT_ROOT}/hessFcn.m</file>
+      <file>${PROJECT_ROOT}/hydroxylation.m</file>
+      <file>${PROJECT_ROOT}/lambdaCoef.m</file>
+      <file>${PROJECT_ROOT}/likelihood.m</file>
+      <file>${PROJECT_ROOT}/maxLikelihood.m</file>
+      <file>${PROJECT_ROOT}/methylation.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/UIdialogBox.fig</file>
+      <file>${PROJECT_ROOT}/UIhydroxy.m</file>
+      <file>${PROJECT_ROOT}/UIreadDataNew.m</file>
+      <file>${PROJECT_ROOT}/UIreadErrors.m</file>
+      <file>${PROJECT_ROOT}/demethylation.m</file>
+      <file>${PROJECT_ROOT}/legendflex/legendflex/legendflex.m</file>
+      <file>${PROJECT_ROOT}/legendflex/setgetpos_V1.2/getpos.m</file>
+      <file>${PROJECT_ROOT}/nearestSPD.m</file>
+      <file>${PROJECT_ROOT}/plotOutput.m</file>
+      <file>${PROJECT_ROOT}/plotOutputToGui.m</file>
+      <file>${PROJECT_ROOT}/rgb/rgb.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="/Users/kyriakopou/Desktop/HOTA/for_testing" name="readme.txt" optional="true">/Users/kyriakopou/Desktop/HOTA/for_testing/readme.txt</file>
+      <file location="/Users/kyriakopou/Desktop/HOTA/for_testing" name="run_HOTA.sh" optional="false">/Users/kyriakopou/Desktop/HOTA/for_testing/run_HOTA.sh</file>
+      <file location="/Users/kyriakopou/Desktop/HOTA/for_testing" name="HOTA.app" optional="false">/Users/kyriakopou/Desktop/HOTA/for_testing/HOTA.app</file>
+      <file location="/Users/kyriakopou/Desktop/HOTA/for_testing" name="splash.png" optional="false">/Users/kyriakopou/Desktop/HOTA/for_testing/splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2016a.app</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.11.6</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

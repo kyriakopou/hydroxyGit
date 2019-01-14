@@ -1,0 +1,4 @@
+day,label,TT,TC,CT,CC,CError,mCError,hmCError,process
+0,day0,5701,9380,10042,96529,0.002,0,0,-
+2,day2,4402,9394,8561,26954,0.002,0,0,rep
+4,day4,26140,13464,10741,8204,0.002,0,0,rep

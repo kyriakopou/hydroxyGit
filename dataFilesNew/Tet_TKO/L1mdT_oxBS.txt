@@ -1,0 +1,5 @@
+tPoint,label,TT,TC,CT,CC,CErr(BS),mCErr(BS),hmCError(BS),CErr(oxBS),mCErr(oxBS),hmCError(oxBS),process
+0,day0,0.005,0.065,0.0755,0.005,0.065,0.0755,-
+1,day1,0.005,0.065,0.0755,0.005,0.065,0.0755,rep
+2,day2,0.005,0.065,0.0755,0.005,0.065,0.0755,rep
+3,day3,0.005,0.065,0.0755,0.005,0.065,0.0755,rep
